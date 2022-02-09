@@ -21,5 +21,16 @@ namespace Netusim
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int a = Convert.ToInt32(textBox1.Text);
+            int faktorial = 1;
+            for(int i = 2; i <= a; i++)
+            {
+                faktorial *= i;
+            }
+            MessageBox.Show("faktorial cisla je " + faktorial);
+        } 
     }
 }
